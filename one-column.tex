@@ -1,0 +1,30 @@
+\documentclass[10pt]{article}
+\usepackage{xeCJK}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{syntonly}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{etoolbox}
+\usepackage{indentfirst}
+\usepackage{bm}
+\usepackage{subfigure}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{geometry}
+\lstset{
+  basicstyle=\small\ttfamily,
+  columns=flexible,
+  breaklines=true
+}
+\geometry{left=1.5cm,right=1.5cm,top=1.0cm,bottom=1.5cm}
+
+\begin{document}
+
+\lstinputlisting{typesetting.tex}
+\noindent\rule{\linewidth}{0.4pt}
+\lstinputlisting{math-formula.tex}
+
+\end{document}
