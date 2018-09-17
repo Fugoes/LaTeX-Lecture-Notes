@@ -3,5 +3,6 @@
 *.log
 *.lot
 *.out
-*.gz
+*.synctex.gz
+*.synctex(busy)
 *.toc
