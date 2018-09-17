@@ -1,27 +1,27 @@
 \documentclass[12pt]{article}
-\usepackage{amsmath,amsfonts,amssymb,bm,hyperref}
-\author{Qi-an Fu}
-\title{Math Formula}
+\usepackage{xeCJK,amsmath,amsfonts,amssymb,bm,hyperref}
+\author{付祈安\quad 王宇逸}
+\title{数学公式}
 \begin{document}
 \maketitle
 \tableofcontents
 \listoftables
 
-\section{Basic}
-This is an inline equation:
+\section{基础}
+行内公式：
 $ (x_1 + x_2)^2 = (x_1 - x_2)^2 + 4 x_1 x_2 $ \\
-Greek letter:
+希腊字母：
 \[ \alpha, \beta, \gamma \]
 \[ \delta, \Delta, \Psi, \Omega \]
-Equal sign:
-\[ =, \neq, \leq, \geq, \equiv \]
+等号/不等号：
+\[ =, \neq, \leq, \geq, \leqslant, \geqslant, \equiv \]
 \[ \approx, \ll, \gg \]
-Fraction:
+分数：
 \[ \frac{a}{b}, \frac ab \]
-Calculus:
+微积分：
 \[ \int^a_b, \lim_{n \rightarrow \infty} \]
 \[ \sum_{n=0}^{\infty}, \prod_\epsilon \]
-Other:
+其它：
 \[ \bar{a}, \overline{a+b}, \underline{a+b} \]
 \[ \vec{a}, \overrightarrow{AB} \]
 \[ \underbrace{a_1+a_2+\ldots+a_n}_n \]
@@ -30,56 +30,72 @@ Other:
 \[ \stackrel{?}{=} \]
 \[ \cdot, \cdots, \dots, \ldots \]
 \[ \circ, \times \]
-$ {\displaystyle \frac ab} $
-\section{Font Face}
+$ \frac ab\ {\displaystyle \frac ab} $
+\section{字体}
 \[ \mathbb{R}, \mathbf{B}, \boldmath{B} \]
 \[ \mathrm{Hi},\ I\ have\ some\ \text{Text}. \]
-\section{Equation Environment}
+\section{公式（equation）环境}
 \begin{equation}
-  \label{eq1}
-  \left\{ \left[ \left( \frac{1}{1+x^2} \middle/ (1 + y) \right) \right] \right\}
-  \quad \left. \frac{\mathrm{d}f}{\mathrm{d}x} \right|_{x = 0}
+	\label{eq1}
+	\left\{ \left[ \left( \frac{1}{1+x^2} \middle/ (1 + y) \right) \right] \right\}
+	\quad \left. \frac{\mathrm{d}f}{\mathrm{d}x} \right|_{x = 0}
 \end{equation}
-No auto numbering:
+使用星号*取消自动标号：
 \begin{equation*}
-  \int\!\!\!\int f(x, y) \; \mathrm{d} x \mathrm{d} y
-  \quad \text{or} \quad \iint
+	\int\!\!\!\int f(x, y) \; \mathrm{d} x \mathrm{d} y
+	\quad \text{or} \quad \iint
 \end{equation*}
-\section{Table}
+\section{表格（table）}
 \begin{table}[htbp]
-  \begin{center}
-    \begin{tabular}{|l|c|r|}
-      \hline
-      \multicolumn{2}{|c|}{Value} & third \\ \hline
-      1           & 2             & 3     \\ \cline{1-1}
-    \end{tabular}
-    \caption{This is a table}
-    \label{tab1}
-  \end{center}
+	\begin{center}
+		\begin{tabular}{|l|c|r|}
+			\hline
+			\multicolumn{2}{|c|}{Value} & third     \\ \hline
+			1                           & 2     & 3 \\ \cline{1-1}
+		\end{tabular}
+		\caption{表格示例}
+		\label{tab1}
+	\end{center}
 \end{table}
-\section{Matrix}
+\section{矩阵}
 \begin{displaymath}
-  \mathbf{x} =
-  \left(\begin{array}{ccc}
-    x_{11} & x_{12} & \ldots \\
-    x_{21} & x_{22} & \ldots \\
-    \vdots & \vdots & \ddots
-  \end{array}\right)
+	\mathbf{x} =
+	\left(\begin{array}{ccc}
+			x_{11} & x_{12} & \ldots \\
+			x_{21} & x_{22} & \ldots \\
+			\vdots & \vdots & \ddots
+		\end{array}\right)
 \end{displaymath}
-\section{Multiline Equation}
+\begin{displaymath}
+	\mathbf{x}=
+	\begin{pmatrix}
+		x_{11} & x_{12} & \ldots \\
+		x_{21} & x_{22} & \ldots \\
+		\vdots & \vdots & \ddots
+	\end{pmatrix}
+\end{displaymath}
+\section{多行公式}
 \begin{align}
-  a     &= b + c \\
-  c + d &= e
+	a     & = b + c \\
+	c + d & = e
 \end{align}
 \begin{equation}
-  \left\{
-  \begin{aligned}
-    a     &= b + c \\
-    c + d &= e
-  \end{aligned}
-  \right.
+	\left\{
+	\begin{aligned}
+		a     & = b + c \\
+		c + d & = e
+	\end{aligned}
+	\right.
 \end{equation}
-\section{Define myself}
+\begin{equation}
+	\begin{cases}
+		\begin{aligned}
+			a     & = b + c \\
+			c + d & = e
+		\end{aligned}
+	\end{cases}
+\end{equation}
+\section{自定义命令}
 \newcommand{\ud}{\mathrm{d}}
 \newcommand{\dif}[2]{\frac{\ud {#1}}{\ud {#2}}}
 \[ \dif fx \]
