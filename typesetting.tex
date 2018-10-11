@@ -35,102 +35,101 @@
 \section{脚注}
 自信主动交流，然后找到……\footnote{阮东(2016)}
 
-\part{Text}
-\section{Marks}\label{sec1}
-\subsection{Identifier In \LaTeX}
+\part{文本}
+\section{符号}\label{sec1}
+\subsection{\LaTeX 中的标识符}
 $\backslash$ \{ \^{} \_{} \^{} \} $\backslash$
 
-\subsection{Some other marks}
-\subsubsection{Tilde}
-\~{} \qquad $\sim$  %\qquad is a relatively long blank.
-\subsubsection{Dash}
+\subsection{其它符号}
+\subsubsection{波浪线}
+\~{} \qquad $\sim$  %\qquad 是一个比较长的空格
+\subsubsection{横线}
 X-men \\
 page 13--67\\
 yes --- or no?\\
 0,1, and $-1$
 
-\subsubsection{Degree Symbol}
-It's $-30\textcelsius$ here in winter and some $50^{\circ}$F in summer.
+\subsubsection{温度符号}
+这里冬天平均$-30$\textcelsius ，夏天平均$50^{\circ}$F。
 
-\subsubsection{Date}
+\subsubsection{日期（英文）}
 It's \today.
 
-\subsubsection{Emphasize}
-\emph{If you use emphasizing inside a piece of emphasizing text, then \LaTeX{} uses the \emph{normal} font for emphasizing.}\\
-You can \textsl{lean} on me!
+\subsubsection{强调（Emphasize）}
+你可以使用\textsl{斜体（实际上是楷体）（italic）}。\\
+\emph{强调块里的强调是\emph{正常}文字。}
 
-\subsubsection{Money}
+\subsubsection{货币}
 \texteuro \  \textdollar
 
-\subsubsection{Accent and Special Character}
-H\^otel, na\"\i ve, \'el\`eve,\\
+\subsubsection{音调类特殊符号}
+Th\^o, na\"\i ve,\\
 \= a \' a \v a \` a \\
 ji\` an du\= o sh\' i gu\v ang
 
-\subsubsection{Quotation}
+\subsubsection{英文引号}
 ``Please press the `x' key.''
 
-\subsubsection{Ligature}
-If you hate ``shelfful'', you can write it as ``shelf\mbox{}ful''.
+\subsubsection{连字}
+如果看不惯``shelfful''，可以写``shelf\mbox{}ful''。
 
-\subsubsection{To Show Off}
+\subsubsection{公然炫（zhuang）技（**）}
 \TeX \\
 \LaTeXe \\
 \AmS-\LaTeX \\
 
-\section{Environment}
-\subsection{Itemize, Enumerate, Description}
+\section{环境}
+\subsection{项目符号、编号、说明}
 \begin{enumerate}
-	\item You can mix the list environment to your taste:
-	      \begin{itemize}
-		      \item But it might start to look silly.
-		      \item[-] With a dash.
-	      \end{itemize}
-	\item Therefore remember:
-	      \begin{description}
-		      \item[stupid] things will not become smart because they are in a list.
-		      \item[smart] things, though, can be presented beautifully in a list.
-	      \end{description}
+	\item 请根据个人口味混合各种环境：
+	\begin{itemize}
+		\item 可能看起来很怪。
+		\item[-] 用横线。
+	\end{itemize}
+	\item 所以要牢记：放在列表里面的东西，
+	\begin{description}
+    	\item[蠢的]不会变聪明；
+    	\item[聪明的]会变漂亮。
+	\end{description}
 \end{enumerate}
 
-\subsection{Flush}
+\subsection{对齐}
 \begin{enumerate}
-	\item Flush left
-	      \begin{flushleft}
-		      This text is\\ left-aligned.
+	\item 左对齐
+	\begin{flushleft}
+		这些文字都是\\ 左对齐的。
 
-		      \LaTeX{} is not trying to make each line the same length.
-	      \end{flushleft}
-	\item Flushright
-	      \begin{flushright}
-		      This text is right-\\aligned.
-		      \LaTeX{} is not trying to make each line the same length.
-	      \end{flushright}
-	\item{Center}
-	      \begin{center}
-		      At the centre\\of the earth
-	      \end{center}
+		\LaTeX{}不保证每行长度相同。
+	\end{flushleft}
+	\item 右对齐
+	\begin{flushright}
+		这些文字是\\ 右对齐的。
+	\end{flushright}
+	\item{居中}
+	\begin{center}
+		千里莺啼绿映红\\水村山郭酒旗风
+	\end{center}
 \end{enumerate}
-\subsection{Quotation}
+\subsection{引用}
 \begin{enumerate}
 	\item quote\\
-	      A typographical rule of thumb for the line length is:
-	      \begin{quote}
-		      On average, no line should be longer than 66 characters.
-	      \end{quote}
-	      This is why \LaTeX{} pages have such large borders by default and also why multicolumn print is used in newspapers.
+	A typographical rule of thumb for the line length is:
+	\begin{quote}
+		On average, no line should be longer than 66 characters.
+	\end{quote}
+	This is why \LaTeX{} pages have such large borders by default and also why multicolumn print is used in newspapers.
 	\item verse\\
-	      I know only one English poem by heart. It is about Humpty Dumty.
-	      \begin{flushleft}
-		      \begin{verse}
-			      Humty Dumty sat on a wall:\\
-			      Humty Dumty had a great fall.\\
-			      All the king's horse and all the King's man\\
-			      Couldn't put Humty Dumty together again.
-		      \end{verse}
-	      \end{flushleft}
+	I know only one English poem by heart. It is about Humpty Dumty.
+	\begin{flushleft}
+		\begin{verse}
+			Humty Dumty sat on a wall:\\
+			Humty Dumty had a great fall.\\
+			All the king's horse and all the King's man\\
+			Couldn't put Humty Dumty together again.
+		\end{verse}
+	\end{flushleft}
 \end{enumerate}
-\subsection{Verbatim}
+\subsection{逐字输出（Verbatim）}
 \begin{verbatim}
   Hello world!
 \end{verbatim}
@@ -145,7 +144,7 @@ Hello world!
 	\includegraphics[width=0.2\textwidth]{logo.jpg}
 	\caption{Logo}\label{logo}
 \end{figure} %插入图片，注意图片格式问题。
-\subsection{Cross-references}
+\subsection{交叉引用}
 You can refer to figure, table, section, and page as follows.\\
 Turn to Section \ref{sec1} on page \pageref{sec1}.\\
 This is Figure \ref{logo}.
