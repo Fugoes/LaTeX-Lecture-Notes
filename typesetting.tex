@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
-\usepackage{xeCJK,graphicx,textcomp,syntonly,amsmath,amsfonts}
+\usepackage{ctex,graphicx,textcomp,syntonly,amsmath,amsfonts}
 \usepackage{amssymb,etoolbox,indentfirst,bm,subfigure,hyperref}
-\author{郑鑫宇 \thanks{Based on lecture notes by Guanhao Huang, Zijia Chen, and Sirui Lu, and work by Oetiker et{} al.}}
+\author{郑鑫宇 \thanks{Based on lecture notes by Guanhao Huang, Zijia Chen, and Sirui Lu, and work by Oetiker et{} al. 由王宇逸进行有选择地汉化。}}
 \title{排版}
 \begin{document}%注释
 \maketitle
@@ -73,7 +73,7 @@ ji\` an du\= o sh\' i gu\v ang
 \subsubsection{连字}
 如果看不惯``shelfful''，可以写``shelf\mbox{}ful''。
 
-\subsubsection{公然炫（zhuang）技（**）}
+\subsubsection{公然炫技}
 \TeX \\
 \LaTeXe \\
 \AmS-\LaTeX \\
@@ -112,13 +112,13 @@ ji\` an du\= o sh\' i gu\v ang
 \end{enumerate}
 \subsection{引用}
 \begin{enumerate}
-	\item quote\\
-	A typographical rule of thumb for the line length is:
+	\item 引用\\
+	出于印刷要求，每行的长度要求为：
 	\begin{quote}
-		On average, no line should be longer than 66 characters.
+		平均来说，每行不应超过66个字符。
 	\end{quote}
-	This is why \LaTeX{} pages have such large borders by default and also why multicolumn print is used in newspapers.
-	\item verse\\
+	这就是\LaTeX{}的页面有如此大的缺省页边距，而且报纸使用多列印刷的原因。
+	\item 诗歌版式\\
 	I know only one English poem by heart. It is about Humpty Dumty.
 	\begin{flushleft}
 		\begin{verse}
@@ -134,18 +134,18 @@ ji\` an du\= o sh\' i gu\v ang
   Hello world!
 \end{verbatim}
 Hello world!
-\subsection{Abstract}
+\subsection{摘要（Abstract）}
 \begin{abstract}
-	The abstract's abstract.\label{abs}
+	摘要的摘要\label{abs}
 \end{abstract}
-\subsection{Figure}
+\subsection{图形（Figure）}
 \begin{figure}[!htp]
 	\centering
 	\includegraphics[width=0.2\textwidth]{logo.jpg}
 	\caption{Logo}\label{logo}
 \end{figure} %插入图片，注意图片格式问题。
 \subsection{交叉引用}
-You can refer to figure, table, section, and page as follows.\\
-Turn to Section \ref{sec1} on page \pageref{sec1}.\\
-This is Figure \ref{logo}.
+如下所示，可以引用到图形、表格、节或页面。\\
+转到第\pageref{sec1}页的第\ref{sec1}节。\\
+到第\ref{logo}个图形。
 \end{document}

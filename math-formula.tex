@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage{xeCJK,amsmath,amsfonts,amssymb,bm,hyperref}
+\usepackage{ctex,amsmath,amsfonts,amssymb,bm,hyperref}
 \author{付祈安}
 \title{数学公式}
 \begin{document}
@@ -11,8 +11,12 @@
 行内公式：
 $ (x_1 + x_2)^2 = (x_1 - x_2)^2 + 4 x_1 x_2 $ \\
 希腊字母：
-\[ \alpha, \beta, \gamma \]
-\[ \delta, \Delta, \Psi, \Omega \]
+\begin{equation*}
+	\alpha, \beta, \gamma
+\end{equation*}
+\begin{displaymath}
+	\delta, \Delta, \Psi, \Omega
+\end{displaymath}
 等号/不等号：
 \[ =, \neq, \leq, \geq, \leqslant, \geqslant, \equiv \]
 \[ \approx, \ll, \gg \]
