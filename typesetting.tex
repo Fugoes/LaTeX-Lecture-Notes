@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage{ctex,graphicx,textcomp,amsmath,amsfonts}
-\usepackage{amssymb,indentfirst,bm,subfigure,hyperref}
+\usepackage{amssymb,indentfirst,bm,subfigure,hyperref,xcolor}
 \author{You Know Who}
 \title{文字排版}
 \begin{document}%注释
@@ -16,7 +16,7 @@
 \subsubsection{Apple}
 \subsubsection{Pen}
 \subsection*{十分遗憾}
-并没有`$\backslash$subsubsubsection'，所以没有pen-pineapple apple pen。
+并没有 $\backslash$subsubsubsection
 
 \section{换行、分段以及缩进}
 第一行第一段。\\
@@ -28,6 +28,8 @@
 
 也可以这样换行。
 
+\vspace{1em}
+
 \noindent 没有缩进的新段落。
 
 \section{脚注}
@@ -38,9 +40,9 @@
 \subsection{\LaTeX 中的标识符}
 $\backslash$ \{ \^{} \_{} \^{} \} $\backslash$
 
-\subsection{其它符号}
 \subsubsection{波浪线}
 \~{} \qquad $\sim$  %\qquad 是一个比较长的空格
+
 \subsubsection{横线}
 X-men \\
 page 13--67\\
@@ -50,11 +52,11 @@ yes --- or no?\\
 \subsubsection{温度符号}
 这里冬天平均$-30$\textcelsius ，夏天平均$50^{\circ}$F。
 
-\subsubsection{日期（英文）}
-It's \today.
+\subsubsection{日期}
+\today
 
-\subsubsection{强调（Emphasize）}
-你可以使用\textsl{斜体（实际上是楷体）（italic）}。\\
+\subsubsection{强调}
+你可以使用\textsl{斜体（实际上是楷体）}。\\
 \emph{强调块里的强调是\emph{正常}文字。}
 
 \subsubsection{货币}
@@ -76,71 +78,75 @@ ji\` an du\= o sh\' i gu\v ang
 \LaTeXe \\
 \AmS-\LaTeX \\
 
+\subsubsection{字体与颜色}
+{\tiny{tiny font}} \textrm{roman} \textsf{sans serif} \texttt{mono} \textbf{bold} \textit{italic} \textsc{small caps}
+
+\textcolor{yellow}{黄色}的脸孔有\textcolor{red}{红色}的污泥
+
 \section{环境}
 \subsection{项目符号、编号、说明}
 \begin{enumerate}
-	\item 请根据个人口味混合各种环境：
-	\begin{itemize}
-		\item 可能看起来很怪。
-		\item[-] 用横线。
-	\end{itemize}
-	\item 所以要牢记：放在列表里面的东西，
-	\begin{description}
-    	\item[蠢的]不会变聪明；
-    	\item[聪明的]会变漂亮。
-	\end{description}
+    \item 请根据个人口味混合各种环境：
+        \begin{itemize}
+            \item 可能看起来很怪。
+            \item[-] 用横线。
+        \end{itemize}
+    \item 所以要牢记：放在列表里面的东西，
+        \begin{description}
+            \item[蠢的]不会变聪明；
+            \item[聪明的]会变漂亮。
+        \end{description}
 \end{enumerate}
 
 \subsection{对齐}
 \begin{enumerate}
-	\item 左对齐
-	\begin{flushleft}
-		这些文字都是\\ 左对齐的。
+    \item 左对齐
+        \begin{flushleft}
+            这些文字都是\\ 左对齐的。
 
-		\LaTeX{}不保证每行长度相同。
-	\end{flushleft}
-	\item 右对齐
-	\begin{flushright}
-		这些文字是\\ 右对齐的。
-	\end{flushright}
-	\item{居中}
-	\begin{center}
-		千里莺啼绿映红\\水村山郭酒旗风
-	\end{center}
+            \LaTeX{}不保证每行长度相同。
+        \end{flushleft}
+    \item 右对齐
+        \begin{flushright}
+            这些文字是\\ 右对齐的。
+        \end{flushright}
+    \item{居中}
+        \begin{center}
+            千里莺啼绿映红\\水村山郭酒旗风
+        \end{center}
 \end{enumerate}
 \subsection{引用}
 \begin{enumerate}
-	\item 引用\\
-	出于印刷要求，每行的长度要求为：
-	\begin{quote}
-		平均来说，每行不应超过66个字符。
-	\end{quote}
-	这就是\LaTeX{}的页面有如此大的缺省页边距，而且报纸使用多列印刷的原因。
-	\item 诗歌版式\\
-	I know only one English poem by heart. It is about Humpty Dumty.
-	\begin{flushleft}
-		\begin{verse}
-			Humty Dumty sat on a wall:\\
-			Humty Dumty had a great fall.\\
-			All the king's horse and all the King's man\\
-			Couldn't put Humty Dumty together again.
-		\end{verse}
-	\end{flushleft}
+    \item 引用\\
+        出于印刷要求，每行的长度要求为：
+        \begin{quote}
+            平均来说，每行不应超过66个半宽字符。
+        \end{quote}
+        这就是\LaTeX{}的页面有如此大的缺省页边距，而且报纸使用多列印刷的原因。
+    \item 诗歌版式
+        \begin{flushleft}
+            \begin{verse}
+                过完了这个月，我们打开门 \\
+                一些花开在高高的树上 \\
+                一些果结在深深的地下 \\
+                \par \rightline{\emph{海子}《新娘》}
+            \end{verse}
+        \end{flushleft}
 \end{enumerate}
 \subsection{逐字输出}
 \begin{verbatim}
-  Hello world!
+    Hello world!
 \end{verbatim}
 Hello world!
 \subsection{摘要}
 \begin{abstract}
-	摘要的摘要\label{abs}
+    摘要的摘要\label{abs}
 \end{abstract}
 \subsection{图片}
 \begin{figure}[!htp]
-	\centering
-	\includegraphics[width=0.2\textwidth]{logo.jpg}
-	\caption{Logo}\label{logo}
+    \centering
+    \includegraphics[width=0.2\textwidth]{logo.jpg}
+    \caption{Logo}\label{logo}
 \end{figure} %插入图片，注意图片格式问题。
 \subsection{交叉引用}
 如下所示，可以引用到图形、表格、节或页面。\\
